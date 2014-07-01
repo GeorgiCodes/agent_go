@@ -11,8 +11,8 @@ class EchoServer
 
   def handle_client(client)
     loop do
-      line = client.gets
-      client.puts line
+      line = client.gets # get input from client
+      client.puts line # echo input back to client
     end
   end
 
